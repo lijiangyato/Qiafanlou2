@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\welcom.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-mdpi\\welcom.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\logo.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-mdpi\\logo.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    }
+]

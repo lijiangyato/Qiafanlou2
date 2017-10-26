@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/order_fastFoodsSetPlace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_height"
+            android:background="#FFFAFA"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/btn_right_32"
+            android:gravity="center_vertical"
+            android:hint="@string/addplace"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            layout="@layout/divider_line" />
+
+        <TextView
+            android:id="@+id/order_fastFoodsSetTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_height"
+            android:background="#FFFAFA"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/btn_right_32"
+            android:gravity="center_vertical"
+            android:hint="@string/order_settime"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_height"
+            android:background="#FFFAFA"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/order_payway"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/order_payWay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:hint="@string/order_selectpayway"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/txt_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_right_32" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_height"
+            android:background="#FFFAFA"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/order_ScoreEdt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/order_scoreway"
+                android:textSize="@dimen/txt_14" />
+
+            <CheckBox
+                android:id="@+id/order_isUseScore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="@string/order_isusescore"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_height"
+            android:background="#FFFAFF"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/order_fastFoodsPoints"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/shopbg_32"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/txt_14" />
+
+            <CheckBox
+                android:id="@+id/order_isTakeBySelf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="@string/order_byself"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            layout="@layout/divider_line" />
+
+        <ListView
+            android:id="@+id/order_fastFoodsLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFAFA" >
+        </ListView>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_height"
+            android:background="#FFFAFA"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/order_moremessage"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/order_moreMsg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:hint="@string/order_detailmore"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_14" />
+
+            <ImageView
+                android:id="@+id/order_backsss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_right_32" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            layout="@layout/divider_line" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mOrderPayOnLineTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/order_payonnet"
+        android:textSize="@dimen/txt_14" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/mOrderPayOnHandlerTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/order_payonface"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/myDialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="@string/time_cancel"
+        android:textSize="@dimen/txt_14" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/divider_line" />
+
+</LinearLayout>

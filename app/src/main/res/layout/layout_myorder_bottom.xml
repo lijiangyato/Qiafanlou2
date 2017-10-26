@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#FFFAFA"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/mPerson_waitPayRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mPerson_waitPayReImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/person_waitpay" />
+
+                <TextView
+                    android:id="@+id/tv_mPerson_waitPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mPerson_waitPayReImg"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/waitpay"
+                    android:textColor="#9A9A9A"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/waitPayNum"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/relativeLayout1"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="#cc0000"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mPerson_waitGoRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mPerson_waitGoReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/person_waitgo" />
+
+                <TextView
+                    android:id="@+id/tv_mPerson_waitGoReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mPerson_waitGoReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/waitgo"
+                    android:textColor="#9A9A9A"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/waitgoNum"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/relativeLayout2"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="#cc0000"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mPerson_hadGoRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mPerson_hadGoReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/person_begingo" />
+
+                <TextView
+                    android:id="@+id/tv_mPerson_hadGoRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mPerson_hadGoReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/hadgo"
+                    android:textColor="#9A9A9A"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hadgoNum"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/relativeLayout3"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="#cc0000"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mPerson_hadComplicRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mPerson_hadComplicImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/person_complic" />
+
+                <TextView
+                    android:id="@+id/tv_mPerson_hadComplic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mPerson_hadComplicImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/hadcomplic"
+                    android:textColor="#9A9A9A"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hadcomplicNum"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/relativeLayout4"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="#cc0000"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

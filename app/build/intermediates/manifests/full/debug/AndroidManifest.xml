@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ings.gogo"
+    android:versionCode="9"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.ings.gogo.application.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3e36282e2631b01b1c257c118c5bca30" />
+
+        <!-- android:value="9ea386860bddd7efc13b4c9863994940" -->
+        <!-- 93a3e34dd6be8787c369d2fe36ea5f41 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+
+        <activity
+            android:name="com.ings.gogo.activity.WelcomActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.MainPageActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.ShopCarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.PersonalActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.SelectPlaceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.DetailFastFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.FastFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.DetailTormorrowCleanFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.DetailTormorrowFastFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.TomorrowFastFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CleanFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.TomorrowCleanFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.OtherMainPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.DetailCleanFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.RegistGetIndentifyCodeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.FindPwdInputTelNumActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.FindPwdGetIdentifyCodeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.FindPwdInputNewPwdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.FindPwdSuccessActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.RegistInputPwdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.PlaceManageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.AddPlaceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.SelectByMapActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.MyOrderActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.SelectDeliverTimeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.EditPlaceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.MoreMsgActvity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.PersonalExitActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.NewShopCarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.BuyOkActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.MyOrderPayActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckMyOrderActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckWaitPayActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckWaitGoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckHadGoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckWaitMarkActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckOrderDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.ScoreDetaiActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.TryDetailFastFoodsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.PersonOrderPayActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.SelectPayWayActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckUpdateActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.MyOrderOtherActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.LoginByCodeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ings.gogo.activity.CheckNewOrderActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

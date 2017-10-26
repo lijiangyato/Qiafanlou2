@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/mMainPageRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mMainPageReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mainpagebg" />
+
+                <TextView
+                    android:id="@+id/tv_mMainPageRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mMainPageReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/bottom_paddingBottom"
+                    android:text="@string/mainPage"
+                    android:textColor="@color/bottom_textcolor"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mShopCarRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mShopCarReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/shopcarbg" />
+
+                <TextView
+                    android:id="@+id/tv_mShopCarRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mShopCarReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/bottom_paddingBottom"
+                    android:text="@string/shopCarPage"
+                    android:textColor="@color/bottom_textcolor"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mPersonalRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mPersonalReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/personalbg" />
+
+                <TextView
+                    android:id="@+id/tv_mPersonalRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mPersonalReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/bottom_paddingBottom"
+                    android:text="@string/PersonalPage"
+                    android:textColor="@color/bottom_textcolor"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

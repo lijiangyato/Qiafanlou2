@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/mPersonActivity_myScore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/person_score_32"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/btn_right_32"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/myscore"
+        android:textSize="@dimen/txt_14" />
+
+    <include layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/mPersonActivity_myLeftMoney"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/person_leftmoney_32"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/btn_right_32"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/myleftmoney"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mPersonActivity_myAddressManage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/person_manageaddress_32"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/btn_right_32"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/mymanageaddress"
+        android:textSize="@dimen/txt_14" />
+
+    <TextView
+        android:id="@+id/mPersonActivity_myClearCache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/person_clear_32"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/btn_right_32"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/mycleancash"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mPersonActivity_myShareAPP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/person_share_32"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/btn_right_32"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/myshareapp"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone" />
+
+    <include layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/mPersonActivity_myRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/person_refresh_32"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/btn_right_32"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/mynew"
+        android:textSize="@dimen/txt_14" />
+    <include layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/mPersonActivity_mySystemSeting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/person_systemseting_32"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/btn_right_32"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/mysystemseting"
+        android:textSize="@dimen/txt_14" />
+
+</LinearLayout>

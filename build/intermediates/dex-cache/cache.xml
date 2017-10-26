@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\AMap_Search_V2.8.0_20160105.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3babc84b93ea0cb9ca53a4c4858a561fd300fe50">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\AMap_Search_V2.8.0_20160105_07aa953badf33b0fcf51bf4421ea0a2bfc8fc88b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_cb01ff0289ebe16828f69982077efbc89cf2c2b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\android-support-v7-recyclerview.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\android-support-v7-recyclerview_d6dd6072ddb195257f3c7c86251e44dea526fa20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\SDK\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_d3af3516828f1fafa6b10dfa75ec5043a8b5210a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\android-viewbadger.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1303b50d535716ca7601c5014357b8435658313">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\android-viewbadger_447feaf93cb7419e400213744aaaef532e381126.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\okhttp-2.7.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\okhttp-2.7.5_c98fcea6063fea4e722a98e384c722a8f361a3e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\universal-image-loader-1.9.4-with-sources.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40595dbd3e3f1b87b27e914340d0e7dfd2d5b3d3">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.4-with-sources_38409a04c1d9f81b2a028b4b049991d98e2c6865.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\flame.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a32ff0d1c92c6755909eabc14d44db2a2c026ed9">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\flame_fcb42bfd706a5114c3a90fe0404e16e2bfca818e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\Amap_2DMap_V2.9.2_20161026.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dcbd36804ce96710b0acb0bc7e2e2854a800d2a3">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\Amap_2DMap_V2.9.2_20161026_ad58a2c7991c19ef425761709613a5a8ea2ec090.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\okio-1.9.0_6f488dc92946ef9e6ae7b2f4fe9d83aee5629400.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\alipaySdk-20160223.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ff0f8e55a08ddd28e1fa8e94e2d8881264a5f345">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\alipaySdk-20160223_2cdb3b876c0d12aa6d86c79e125313b640337b7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14_e283718992979e48c0cc25b1689b5b05cb4ffb5d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\AMap_Location_v2.3.0_20160112.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfe17aa93c71a6973a53fcbaf7bfe2f3a1859dcf">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\AMap_Location_v2.3.0_20160112_fb476bb65e1daf4a71ca4dd5333b4084e205a6bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\gson-2.3.1_b871dc0708004d951dd5c7391e9ffb1bc707ed50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0_920d4d8873f17268ff2688b03dd15f05467b985a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="H:\Androidbao\apphomhui\Qiafanlou2\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_b666a379efdeb628352de62122bc02250f94f623.jar" />
+    </item>
+
+</items>

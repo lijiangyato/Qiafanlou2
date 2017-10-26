@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/mMainPageViewPagerFL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <com.ings.gogo.view.AutoScrollViewPager
+            android:id="@+id/mMainPageViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/mMainPageCicleInVPLL"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/mMainPageIsIntheRangeTv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFAFA"
+        android:drawableLeft="@drawable/cleanfoods"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/selectgoodsPalce"
+        android:textSize="@dimen/txt_14" />
+
+</LinearLayout>

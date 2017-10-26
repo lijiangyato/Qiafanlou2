@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\official.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\official.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\qq.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\qq.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_launcher.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\goods_introduction.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\goods_introduction.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\love.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\love.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\share_button.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\share_button.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\alpha_circle.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\alpha_circle.png"
+    },
+    {
+        "merged": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\comment.png",
+        "source": "H:\\Androidbao\\apphomhui\\Qiafanlou2\\app\\src\\main\\res\\drawable-ldpi\\comment.png"
+    }
+]

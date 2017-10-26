@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFA"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/placeadd_topRe"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/moremsg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:padding="12dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:text="@string/order_addmoremessage"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/txt_16" />
+
+        <TextView
+            android:id="@+id/moremsg_complick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/menu_enter"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/txt_14"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/moremsg_addmoremsgedt"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/placeadd_topRe"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="@string/order_detailmore"
+        android:maxLength="200"
+        android:padding="5dp"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/txt_14" />
+
+    <TextView
+        android:id="@+id/moremsg_wordNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:layout_below="@+id/moremsg_addmoremsgedt"
+        android:text="@string/menu_enter"
+        android:textColor="#1a1a1a"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/txt_12"
+        android:visibility="visible" />
+
+</RelativeLayout>

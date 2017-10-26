@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mMainPageTittleLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height1"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mMainPagelocationPlaceIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/person_manageaddress_32" />
+
+        <TextView
+            android:id="@+id/mMainPagelocationPlaceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:textColor="@color/grey_color2"
+            android:textSize="@dimen/common_testsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/xiala" />
+
+        <ImageView
+            android:id="@+id/mMainPageManagePlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/placemanagebg"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mMainMenuDivide1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mMainPageTittleLL"
+        layout="@layout/divider_line" />
+
+    <include
+        android:id="@+id/mMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mMainMenuDivide1"
+        layout="@layout/activity_vp_main" />
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/paymoney_topLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/selectpay_backToParentIv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/paymoney_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="@string/select_payway"
+            android:textSize="@dimen/txt_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/paymoney_divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymoney_topLL"
+        layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_below="@+id/paymoney_divide"
+        android:layout_marginTop="20dp"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_zhifubao" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/personal_height"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/pay_paybyzhifubao"
+                android:textSize="@dimen/txt_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/pay_paybyzhifubaotips"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/selectpay_isUseZhifuBao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:checked="true"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/paymoney_divide1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhifubao"
+        layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/yinglian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_below="@+id/paymoney_divide1"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_weixin" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/personal_height"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/pay_paybyweixin"
+                android:textSize="@dimen/txt_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/pay_paybytips"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/selectpay_isUseweixin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:clickable="false"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/paymoney_divide2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yinglian"
+        layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_below="@+id/paymoney_divide2"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_yl" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/personal_height"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/pay_paybyyinglian"
+                android:textSize="@dimen/txt_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/pay_paybytips"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/selectpay_isUseYingLian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:clickable="false"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selectpay_paymoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="#56ABE4"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

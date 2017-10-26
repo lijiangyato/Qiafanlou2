@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/placeadd_topRe"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/addplace_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:padding="12dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:text="@string/addplace"
+            android:textColor="#1a1a1a"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/addplace_saveplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/saveplace"
+            android:textColor="#1a1a1a"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placeadd_topRe"
+        layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/addPlace_detailContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFFAFA"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/saveplace_people"
+            android:textSize="@dimen/txt_14" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/saveplace_name"
+                android:textSize="@dimen/txt_14" />
+
+            <EditText
+                android:id="@+id/addplace_nameEdt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/saveplace_inputname"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:id="@+id/addplace_sexRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/addplace_manCb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/saveplace_man"
+                android:textSize="@dimen/txt_14" />
+
+            <CheckBox
+                android:id="@+id/addplace_womanCb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/saveplace_woman"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/saveplace_phone"
+                android:textSize="@dimen/txt_14" />
+
+            <EditText
+                android:id="@+id/addplace_phoneEdt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/saveplace_phonetips"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/divider_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFFAFA"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/saveplace_place"
+            android:textSize="@dimen/txt_14" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/saveplace_placelogo"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/addplace_selecPlaceTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/saveplace_clickselect"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            layout="@layout/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/saveplace_doornum"
+                android:textSize="@dimen/txt_14" />
+
+            <EditText
+                android:id="@+id/addplace_doornumEdt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/saveplace_doornumtips"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/divider_line" />
+    </LinearLayout>
+
+</RelativeLayout>

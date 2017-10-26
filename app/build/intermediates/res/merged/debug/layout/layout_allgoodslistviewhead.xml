@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_allgoodslistinclude"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bottom_paddingBottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/mFastFoodsRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mmFastFoodsImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fastfoods1" />
+
+                <TextView
+                    android:id="@+id/tv_mFastFoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mmFastFoodsImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="@dimen/bottom_paddingBottom"
+                    android:text="@string/fastFood"
+                    android:textColor="#E70B3A"
+                    android:textSize="@dimen/common_testsize" />
+
+                <ImageView
+                    android:id="@+id/cursor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mFastFoods"
+                    android:layout_gravity="center"
+                    android:background="#EEEEEE"
+                    android:src="@drawable/roller" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mCleanFoodsRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mCleanFoodsReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cleanfoods1" />
+
+                <TextView
+                    android:id="@+id/tv_mCleanFoodsRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mCleanFoodsReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/bottom_paddingBottom"
+                    android:paddingTop="@dimen/bottom_paddingBottom"
+                    android:text="@string/cleanFood"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mNextDayFastFoodsRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mNextDayFastFoodsReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fastfoods" />
+
+                <TextView
+                    android:id="@+id/tv_mNextDayFastFoodsRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mNextDayFastFoodsReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/bottom_paddingBottom"
+                    android:paddingTop="@dimen/bottom_paddingBottom"
+                    android:text="@string/tormorowfastFood"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mNextDayCleanFoodsRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mNextDayCleanFoodsReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cleanfoods" />
+
+                <TextView
+                    android:id="@+id/tv_mNextDayCleanFoodsRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mNextDayCleanFoodsReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/bottom_paddingBottom"
+                    android:paddingTop="@dimen/bottom_paddingBottom"
+                    android:text="@string/tormorowcleanFood"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F6F6"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:scaleType="fitXY"
+            android:src="@drawable/soretab_bg_on" />
+
+        <TextView
+            android:id="@+id/mAllGoodsHeadTuiJianTv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:textColor="@color/grey_color2"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

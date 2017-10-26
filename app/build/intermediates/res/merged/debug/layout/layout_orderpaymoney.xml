@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/paymoney_topLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/paymoney_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="@string/pay_order"
+            android:textSize="@dimen/txt_16"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/paymoney_backToParentIv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:hint="放弃"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/paymoney_divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymoney_topLL"
+        layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/paymoney_timtips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymoney_divide"
+        android:gravity="center"
+        android:hint="@string/pay_lefttime"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="@dimen/txt_12"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/paymoney_leftTimeLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymoney_timtips"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/paymoney_lefttime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:hint="@string/pay_second"
+            android:paddingLeft="2dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_12"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/paymoney_divide2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymoney_leftTimeLL"
+        layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/paymoney_ordertotalMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/paymoney_divide2"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:singleLine="false"
+        android:text="￥323"
+        android:textSize="@dimen/txt_14" />
+
+    <TextView
+        android:id="@+id/paymoney_ordercheapmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/paymoney_ordertotalMoney"
+        android:gravity="center|left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:singleLine="false"
+        android:text="优惠信息"
+        android:textSize="@dimen/txt_14" />
+
+    <include
+        android:id="@+id/paymoney_divide3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymoney_ordercheapmsg"
+        layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_below="@+id/paymoney_divide3"
+        android:layout_marginTop="20dp"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_zhifubao" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/personal_height"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/pay_paybyzhifubao"
+                android:textSize="@dimen/txt_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/pay_paybyzhifubaotips"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/paymoney_isUseZhifuBao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:checked="true"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/paymoney_divide5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhifubao"
+        layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/yinglian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_below="@+id/zhifubao"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_weixin" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/personal_height"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/pay_paybyweixin"
+                android:textSize="@dimen/txt_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/pay_paybytips"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/paymoney_isUseweixin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:clickable="false"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_height"
+        android:layout_below="@+id/yinglian"
+        android:background="#FFFAFA"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_yl" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/personal_height"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/pay_paybyyinglian"
+                android:textSize="@dimen/txt_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/pay_paybytips"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/paymoney_isUseYingLian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:clickable="false"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/paymoney_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="#56ABE4"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

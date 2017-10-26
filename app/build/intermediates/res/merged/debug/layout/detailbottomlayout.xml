@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/ mDetailShopCarRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/bottom_padding" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/mShopCarReImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/shopcarbg" />
+
+                <TextView
+                    android:id="@+id/tv_mShopCarRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mShopCarReImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/bottom_paddingBottom"
+                    android:text="@string/goshopCarPage"
+                    android:textColor="@color/bottom_textcolor"
+                    android:textSize="@dimen/common_testsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mJoinInShopCar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#CD0000"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/joinshopcar"
+            android:textColor="#fff"
+            android:textSize="@dimen/shopcar_textsize" />
+    </LinearLayout>
+
+</LinearLayout>
