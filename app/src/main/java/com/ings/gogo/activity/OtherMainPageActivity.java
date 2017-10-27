@@ -349,9 +349,7 @@ public class OtherMainPageActivity extends BaseActivity implements
 									View view, int position, long id) {
 								// TODO Auto-generated method stub
 
-								Intent intent = new Intent(
-										getApplicationContext(),
-										DetailFastFoodsActivity.class);
+								Intent intent = new Intent(getApplicationContext(), DetailFastFoodsActivity.class);
 								Bundle bundle = new Bundle();
 								bundle.putString("fastFoodsName", mFastEntity
 										.getData().get((int) id).getProname());

@@ -170,20 +170,22 @@ public class FastFoodsActivity extends BaseActivity {
 										getApplicationContext(),
 										DetailFastFoodsActivity.class);
 								Bundle bundle = new Bundle();
+								//异常报错=long长整型转换成int id=变成了-1
 								bundle.putString("fastFoodsName", mFastEntity
-										.getData().get((int) id).getProname());
+										.getData().get((int) position).getProname());
+
 								bundle.putString("fastFoodsPrice", mFastEntity
-										.getData().get((int) id).getPrice()
+										.getData().get((int) position).getPrice()
 										+ "");
 								bundle.putString("proid", mFastEntity.getData()
-										.get((int) id).getProid());
+										.get((int) position).getProid());
 								bundle.putString("goodsImage", mFastEntity
-										.getData().get((int) id).getImgurl());
+										.getData().get((int) position).getImgurl());
 								bundle.putString("isToday", isToday);
 								bundle.putInt("Stock", mFastEntity.getData()
-										.get((int) id).getStock());
+										.get((int) position).getStock());
 								bundle.putString("ShortDesc", mFastEntity
-										.getData().get((int) id).getShortdesc());
+										.getData().get((int) position).getShortdesc());
 								bundle.putSerializable("pointDesc",
 										(Serializable) mShopDesc);
 								intent.putExtras(bundle);

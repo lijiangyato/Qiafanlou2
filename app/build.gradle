@@ -15,7 +15,7 @@ android {
     signingConfigs {
         releaseConfig {
 
-           /* *//*lijiang*//*
+            //lijiang
             //:别名
             keyAlias 'qiafanlou'
             //:密码
@@ -23,20 +23,20 @@ android {
             //jks存放的文件
             storeFile file('H:/Androidbao/apphomhui/Qiafanlou2/app/build/outputs/apk/Huicompany.jks')
             //确认密码
-            storePassword 'homehui2017'*/
+            storePassword 'homehui2017'
         }
 
     }
 
     buildTypes {
         release {
-           // signingConfig signingConfigs.releaseConfig
+            //signingConfig signingConfigs.releaseConfig
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
         debug{
-            //signingConfig signingConfigs.releaseConfig
+            signingConfig signingConfigs.releaseConfig
         }
 
     }

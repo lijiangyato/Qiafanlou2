@@ -64,9 +64,9 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 
 	private List<String> posterImage = null;
 	private List<ImageView> points = null;
-	// Í¼Æ¬¹ö¶¯µÄÊ±¼ä
+	// Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 	private int interval = 3000;
-	// Í¼Æ¬µÄ×ÜÕÅÊý
+	// Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private int count = 3;
 	private int index;
 	private PictureUrlEntity picEntity;
@@ -109,8 +109,7 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 				if (mFastEntity.getData().size() == 0) {
 					mGoodsDesrcTv.setText("");
 				} else {
-					mGoodsDesrcTv.setText("Ã÷ÈÕ¿ì²Í£¨¹²"
-							+ mFastEntity.getData().size() + "¸öÉÌÆ·£©");
+					mGoodsDesrcTv.setText("æ˜Žæ—¥å¿«é¤" +"("+"å…±"+ mFastEntity.getData().size() + "ä¸ªå•†å“"+")");
 				}
 
 				mNewFastFoodsLV.setAdapter(mFastAdapter);
@@ -124,21 +123,21 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 								Intent intent = new Intent(
 										getApplicationContext(),
 										DetailTormorrowFastFoodsActivity.class);
-								LogUtils.e("Î»ÖÃ´íÎóposition+id", "" + position
+								LogUtils.e("Î»ï¿½Ã´ï¿½ï¿½ï¿½position+id", "" + position
 										+ "   " + id);
 								Bundle bundle = new Bundle();
 								bundle.putString("fastFoodsName", mFastEntity
-										.getData().get((int) id).getProname());
+										.getData().get((int) position).getProname());
 								bundle.putString("fastFoodsPrice", mFastEntity
-										.getData().get((int) id).getPrice()
+										.getData().get((int) position).getPrice()
 										+ "");
 								bundle.putString("proid", mFastEntity.getData()
-										.get((int) id).getProid());
+										.get((int) position).getProid());
 								bundle.putString("goodsImage", mFastEntity
-										.getData().get((int) id).getImgurl());
+										.getData().get((int) position).getImgurl());
 								bundle.putString("isToday", isToday);
 								bundle.putString("ShortDesc", mFastEntity
-										.getData().get((int) id).getShortdesc());
+										.getData().get((int) position).getShortdesc());
 								bundle.putSerializable("pointDesc",
 										(Serializable) mShopDesc);
 								intent.putExtras(bundle);
@@ -148,7 +147,7 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 				break;
 			case GET_PICOK:
 				if (mainLunBoPic.size() == 0) {
-					LogUtils.e("Êý¾ÝÎª¿Õ", "Êý¾ÝÎª¿Õ");
+					LogUtils.e("ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½");
 
 				} else {
 					mMyViewPage.startAutoScroll();
@@ -214,7 +213,7 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 	protected void getProductDatas() {
 		// TODO Auto-generated method stub
 		OkHttpClient mOkHttpClient = new OkHttpClient();
-		// ¸ÄÍøÖ·ÐèÒªµÄ²ÎÊý pointid ºÍ categoryid
+		// ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Òªï¿½Ä²ï¿½ï¿½ï¿½ pointid ï¿½ï¿½ categoryid
 		final Request request = new Request.Builder().url(
 				BaseData.GET_FAST_PRODUCTS + pointID
 						+ "&categoryid=8792CBB4-B0CA-4276-AC5A-1F1B08562563"
@@ -229,7 +228,7 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 			@Override
 			public void onResponse(final Response response) throws IOException {
 				String getProductBody = response.body().string();
-				LogUtils.e("Ã÷ÈÕ¿ì²ÍµÄbody--->>", getProductBody);
+				LogUtils.e("ï¿½ï¿½ï¿½Õ¿ï¿½Íµï¿½body--->>", getProductBody);
 				Gson gson = new Gson();
 				mFastEntity = gson.fromJson(getProductBody,
 						FastFoodsEntity.class);
@@ -244,14 +243,14 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 
 	private void getMainBgImg() {
 		// TODO Auto-generated method stub
-		// ´´½¨okHttpClient¶ÔÏó
+		// ï¿½ï¿½ï¿½ï¿½okHttpClientï¿½ï¿½ï¿½ï¿½
 		OkHttpClient mOkHttpClient = new OkHttpClient();
-		// ´´½¨Ò»¸öRequest
+		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Request
 		final Request request = new Request.Builder().url(BaseData.GET_ADS_PIC)
 				.build();
 		// new call
 		Call call = mOkHttpClient.newCall(request);
-		// ÇëÇó¼ÓÈëµ÷¶È
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		call.enqueue(new Callback() {
 			@Override
 			public void onFailure(Request request, IOException e) {
@@ -260,11 +259,11 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 			@Override
 			public void onResponse(final Response response) throws IOException {
 				String getPicBody = response.body().string();
-				LogUtils.e("Ã÷ÈÕ¿ì²Í--->>", getPicBody);
+				LogUtils.e("ï¿½ï¿½ï¿½Õ¿ï¿½ï¿½--->>", getPicBody);
 				Gson gson = new Gson();
 				picEntity = gson.fromJson(getPicBody, PictureUrlEntity.class);
 				count = picEntity.getData().size();
-				LogUtils.e("Ã÷ÈÕ¿ì²ÍÂÖ²¥Í¼×ÜÊý--¡·¡·", count + "+");
+				LogUtils.e("ï¿½ï¿½ï¿½Õ¿ï¿½ï¿½ï¿½Ö²ï¿½Í¼ï¿½ï¿½ï¿½ï¿½--ï¿½ï¿½ï¿½ï¿½", count + "+");
 				for (int i = 0; i < picEntity.getData().size(); i++) {
 					allBgPicUrl = picEntity.getData().get(i).getImgurl();
 					mainLunBoPic.add(allBgPicUrl);
@@ -301,7 +300,7 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 	}
 
 	private void initPoster() {
-		// ÉèÖÃ ViewPagerµÄ¸ß¶ÈÎªÆÁÄ»¿í¶ÈµÄ1/2
+		// ï¿½ï¿½ï¿½ï¿½ ViewPagerï¿½Ä¸ß¶ï¿½Îªï¿½ï¿½Ä»ï¿½ï¿½Èµï¿½1/2
 		FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
 				FrameLayout.LayoutParams.MATCH_PARENT,
 				(int) (getScreen(this).widthPixels / 2.5));
@@ -329,7 +328,7 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 
 			ImageView imageView = new ImageView(context);
 			imageView.setAdjustViewBounds(true);
-			// TODO µ÷ÕûÍ¼Æ¬´óÐ¡
+			// TODO ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ð¡
 			imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 			ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
 					ViewGroup.LayoutParams.MATCH_PARENT,
@@ -369,7 +368,7 @@ public class TomorrowFastFoodsActivity extends BaseActivity {
 
 		@Override
 		public void onClick(View v) {
-			// viewpagerµã»÷ÊÂ¼þ
+			// viewpagerï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 			mMyViewPage.stopAutoScroll();
 		}
 

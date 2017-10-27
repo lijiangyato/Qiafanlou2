@@ -30,9 +30,8 @@
             android:name="com.amap.api.v2.apikey"
 
 
-            android:value="3e36282e2631b01b1c257c118c5bca30" />
-
-        <!--android:value="9ea386860bddd7efc13b4c9863994940" -->
+            android:value="93a3e34dd6be8787c369d2fe36ea5f41" />
+            <!--3e36282e2631b01b1c257c118c5bca30-->
             <!--93a3e34dd6be8787c369d2fe36ea5f41-->
         <service android:name="com.amap.api.location.APSService" >
         </service>
